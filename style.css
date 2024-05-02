@@ -128,12 +128,11 @@ nav {
 
   .navbar-links
   {
-    z-index: 1;
+    z-index: 1001;
     position: absolute;
     top: 0;
     left: 0;
     background-color: white;
-
   }
 
   .navbar-links a
@@ -444,7 +443,7 @@ nav {
   left: 0;
   height: 60%;
   display: flex;
-
+  visibility: hidden;
   padding-left: 10px;
 }
 
@@ -460,6 +459,11 @@ nav {
     transition: left 0.3s ease;
     z-index: 1000;
     /* Ensure sidebar appears above other content */
+  }
+
+  .sidebar-icon
+  {
+    visibility: visible;
   }
 }
 

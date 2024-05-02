@@ -100,17 +100,47 @@ nav {
 .navbar-links li a:hover {
   color: #e4f9ff;
   border-bottom: 2px solid rgb(59, 180, 251);
-  background-color: #0b3558;
+  background-color: #0b3558;  
 }
 
 .navbar-links a {
   color: white;
   padding: 5px 3px;
   font-size: 1.2rem;
+  border-radius: 10px;
 }
 
 .navbar-links span img {
-  width: 20px;
+  width: 1.2rem;
+}
+
+/*! Responsiveness for navbar */
+
+@media only screen and (max-width : 768px) {
+
+  .bottom-nav
+  {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    position: relative;
+  }
+
+  .navbar-links
+  {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+  }
+
+  .navbar-links a
+  {
+    color: white;
+    font-size: 0.9rem;
+  }
 }
 
 #ldce-logo {
@@ -366,6 +396,11 @@ nav {
     /* Center the logo and institution name */
   }
 
+  .mid-nav .container
+  {
+    padding: 0 !important;
+  }
+
   .navbar-links {
     display: none;
     /* Hide the main navigation links */
@@ -417,9 +452,9 @@ nav {
 @media only screen and (max-width: 768px) {
   .sidebar {
     top: 0;
-    left: -250px;
+    left: -100%;
     /* Initially hidden off the screen */
-    width: 250px;
+    width: 100%;
     height: 100%;
     background-color: #0b3558;
     transition: left 0.3s ease;
@@ -449,9 +484,17 @@ nav {
   position: absolute;
   top: 20px;
   left: 20px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
   cursor: pointer;
   color: white;
   font-size: 24px;
+  width: 95%;
+  margin: 1rem;
+  padding: 0 4rem;
+  text-align: center;
 }
 
 .navbar-links {

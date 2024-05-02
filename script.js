@@ -1,18 +1,28 @@
 function toggleSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  if (sidebar.style.left === "-250px") {
-    sidebar.style.left = "0";
-  } else {
-    sidebar.style.left = "-250px";
+
+
+  if(window.innerWidth <= 768)
+  {
+    const sidebar = document.querySelector(".sidebar");
+    if (sidebar.style.left === "-100%") {
+      sidebar.style.left = "0";
+    } else {
+      sidebar.style.left = "-100%";
+    }
   }
 }
 
 function remove() {
-  const sidebar = document.querySelector(".sidebar");
-  if (sidebar.style.left === "-250px") {
-    sidebar.style.left = "0";
-  } else {
-    sidebar.style.left = "-250px";
+
+  if(window.innerWidth <= 768)
+  {
+    const sidebar = document.querySelector(".sidebar");
+    if (sidebar.style.left === "-100%") {
+      sidebar.style.left = "0";
+    } else {
+      sidebar.style.left = "-100%";
+    }
   }
+
 }
 document.getElementById("mrindia").addEventListener("click", remove);

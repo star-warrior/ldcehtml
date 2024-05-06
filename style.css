@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
   font-size: 16px;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .container {
@@ -98,9 +98,12 @@ nav {
 }
 
 .navbar-links li a:hover {
-  color: #e4f9ff;
+  color: #f6f6f6;
   border-bottom: 2px solid rgb(59, 180, 251);
-  background-color: #0b3558;  
+  background-color: #75d5f5;
+  transition: 0.1s 0.1s ease-in-out;
+  background: linear-gradient(315deg, #69c0dd, #7de4ff);
+  box-shadow: -12px -12px 24px #57bee0, 12px 12px 24px #e4f9ff;
 }
 
 .navbar-links a {
@@ -108,26 +111,24 @@ nav {
   padding: 5px 3px;
   font-size: 1.2rem;
   border-radius: 10px;
+  transition: 0.1s 0.1s ease-in-out;
 }
 
 .navbar-links span img {
   width: 1.2rem;
 }
 
-/*! Responsiveness for navbar */
+/* ! Responsiveness for navbar
 
-@media only screen and (max-width : 768px) {
-
-  .bottom-nav
-  {
+@media only screen and (max-width: 768px) {
+  .bottom-nav {
     display: flex;
     flex-direction: column;
     height: 40vh;
     position: relative;
   }
 
-  .navbar-links
-  {
+  .navbar-links {
     z-index: 1001;
     position: absolute;
     top: 0;
@@ -135,12 +136,11 @@ nav {
     background-color: white;
   }
 
-  .navbar-links a
-  {
+  .navbar-links a {
     color: white;
     font-size: 0.9rem;
   }
-}
+} */
 
 #ldce-logo {
   width: 70px;
@@ -149,6 +149,7 @@ nav {
 .navbar-links .active {
   color: rgb(59, 180, 251);
   border-bottom: 2px solid rgb(59, 180, 251);
+  background-color: #ffffffaf;
 }
 
 .hero {
@@ -376,7 +377,7 @@ nav {
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-
+  
   /* Adjustments for smaller screens */
   .top-nav {
     flex-direction: column;
@@ -395,8 +396,7 @@ nav {
     /* Center the logo and institution name */
   }
 
-  .mid-nav .container
-  {
+  .mid-nav .container {
     padding: 0 !important;
   }
 
@@ -447,7 +447,6 @@ nav {
   padding-left: 10px;
 }
 
-
 @media only screen and (max-width: 768px) {
   .sidebar {
     top: 0;
@@ -461,8 +460,7 @@ nav {
     /* Ensure sidebar appears above other content */
   }
 
-  .sidebar-icon
-  {
+  .sidebar-icon {
     visibility: visible;
   }
 }
@@ -517,8 +515,4 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 18px;
-}
-
-.navbar-links li a:hover {
-  color: lightblue;
 }
